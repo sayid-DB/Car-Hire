@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-croyance-purple: #501087;
+  --color-croyance-purple-dark: #35005f;
+  --color-croyance-purple-light: #f0dbff;
+  --color-croyance-purple-hover: #612798;
+  --color-croyance-teal: #19B496;
+  --color-croyance-teal-dark: #006b58;
+  --color-croyance-teal-light: #e8faf6;
+  --color-croyance-charcoal: #1F272D;
+  --color-croyance-dark: #191919;
+  --color-croyance-gray-bg: #F5F5F5;
+  --color-croyance-border: #E2E5E8;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.font-financial-tabular,
+.font-financial-display {
+  font-family: var(--font-mono);
+}
+
+/* Custom scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #CEC3D3;
+  border-radius: 4px;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out forwards;
+}

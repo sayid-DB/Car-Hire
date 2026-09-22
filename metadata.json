@@ -1,0 +1,6 @@
+{
+  "name": "Croyance Auto Lease",
+  "description": "Executive vehicle leasing and lease-to-own automotive finance program in Nigeria.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
